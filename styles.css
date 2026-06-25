@@ -448,6 +448,10 @@ header {
 }
 
 /* Main Content Area */
+.content-area {
+  min-width: 0;
+}
+
 .paper-header {
   margin-bottom: 3rem;
   text-align: center;
