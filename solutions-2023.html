@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023 Solved Paper | Discrete Mathematics (PCC-CS401)</title>
+  <meta name="description" content="Detailed step-by-step solutions to MAKAUT B.Tech CSE/CS 4th Sem 2023 Discrete Mathematics exam paper.">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-color);">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+        </svg>
+        <span>DiscreteMaths</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="solutions-2025.html">2025 Solved</a></li>
+        <li><a href="solutions-2024.html">2024 Solved</a></li>
+        <li><a href="solutions-2023.html" class="active">2023 Solved</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme"></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content Container -->
+  <div class="container solution-layout">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-heading">2023 exam Sections</div>
+      <ul class="sidebar-menu">
+        <li class="sidebar-menu-item"><a href="#group-a" class="active">Group A (Very Short)</a></li>
+        <li class="sidebar-menu-item"><a href="#group-b">Group B (Short)</a></li>
+        <li class="sidebar-menu-item"><a href="#group-c">Group C (Long)</a></li>
+      </ul>
+      
+      <div class="sidebar-heading" style="margin-top: 2rem;">Interactive Tools</div>
+      <div class="widget-container" style="padding: 1rem; font-size: 0.85rem;">
+        <h4 style="margin-bottom: 0.5rem; color: var(--accent-color);">Truth Table Generator</h4>
+        <p style="margin-bottom: 0.75rem; color: var(--text-secondary); font-size: 0.8rem;">Evaluate logical expressions instantly.</p>
+        <a href="#logic-tool" class="btn btn-primary" style="display: block; text-align: center; text-decoration: none; padding: 0.4rem;">Launch Tool</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content-area">
+      <div class="paper-header">
+        <span class="year-badge">Solved Paper</span>
+        <h1>Discrete Mathematics 2023</h1>
+        <div class="paper-meta-info">
+          <span><strong>Course:</strong> B.Tech CSE/CS 4th Semester</span>
+          <span><strong>Paper Code:</strong> PCC-CS401</span>
+          <span><strong>Full Marks:</strong> 70</span>
+          <span><strong>Time:</strong> 3 Hours</span>
+        </div>
+      </div>
+
+      <!-- GROUP A -->
+      <section id="group-a" class="section-block">
+        <div class="section-block-title">
+          <span>Group A: Very Short Answer Questions</span>
+          <span class="section-mark-badge">10 &times; 1 = 10 Marks</span>
+        </div>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;"><em>Answer any ten of the following questions:</em></p>
+
+        <!-- Q1 (i) -->
+        <div class="question-card" data-tags="graphs">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(i)</span>
+              <span class="question-text">What is a cycle in a graph?</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>A <strong>cycle</strong> (or simple circuit) in a graph $G = (V,E)$ is a path $v_0, v_1, v_2, \dots, v_n$ of length $n \geq 3$ in which:</p>
+              <ul>
+                <li>The path begins and ends at the same vertex, i.e., $v_0 = v_n$.</li>
+                <li>No vertex is visited more than once except the start/end vertex, i.e., $v_i \neq v_j$ for all $0 \le i < j < n$.</li>
+                <li>No edge is traversed more than once.</li>
+              </ul>
+              <p><strong>Example:</strong> In a triangle graph with vertices $A, B, C$, the sequence $A - B - C - A$ forms a cycle of length 3.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (ii) -->
+        <div class="question-card" data-tags="logic">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(ii)</span>
+              <span class="question-text">Which law of inference states that "if A implies B, and B implies C, then A implies C"?</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>The law of inference is called **Hypothetical Syllogism** (also known as the transitivity of implication).</p>
+              <p>In logical notation, it is represented as:
+              $$ \frac{P \to Q, \quad Q \to R}{\therefore P \to R} $$
+              or as a tautology: $((p \to q) \wedge (q \to r)) \to (p \to r)$.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (iii) -->
+        <div class="question-card" data-tags="sets">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(iii)</span>
+              <span class="question-text">What do you mean by the symmetric difference of set A and B?</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>The <strong>symmetric difference</strong> of two sets $A$ and $B$, denoted by $A \triangle B$, is the set of all elements that belong to either $A$ or $B$ but not to both.</p>
+              <p>Mathematically:
+              $$ A \triangle B = (A - B) \cup (B - A) $$
+              Alternatively, it can be defined as:
+              $$ A \triangle B = (A \cup B) - (A \cap B) $$</p>
+              <p><strong>Example:</strong> If $A = \{1, 2, 3\}$ and $B = \{3, 4, 5\}$, then $A \triangle B = \{1, 2, 4, 5\}$.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (iv) -->
+        <div class="question-card" data-tags="sets">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(iv)</span>
+              <span class="question-text">How many reflexive relations are possible on a set with n elements?</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>The number of reflexive relations possible on a set with $n$ elements is <strong>$2^{n^2 - n}$</strong>.</p>
+              <p><strong>Explanation:</strong> A relation $R$ on set $S$ ($|S| = n$) is a subset of $S \times S$, which contains $n^2$ ordered pairs. For $R$ to be reflexive, it must contain all $n$ diagonal elements $(x, x)$ for all $x \in S$. The remaining $n^2 - n$ non-diagonal elements can either be included or excluded from the relation. Thus, there are $2^{n^2 - n}$ choices.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (v) -->
+        <div class="question-card" data-tags="sets">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(v)</span>
+              <span class="question-text">What do you mean by a 'relation'?</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>A binary <strong>relation</strong> $R$ from a set $A$ to a set $B$ is a subset of the Cartesian product $A \times B$. That is, $R \subseteq A \times B$.</p>
+              <p>If $(a, b) \in R$, we say that $a$ is related to $b$ and write it as $a R b$. If $A = B$, it is called a relation on set $A$.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (vi) -->
+        <div class="question-card" data-tags="graphs">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(vi)</span>
+              <span class="question-text">What is a spanning tree in a graph?</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>A <strong>spanning tree</strong> of a connected, undirected graph $G = (V,E)$ is a subgraph of $G$ that is a tree and contains all the vertices of $G$ (i.e., it spans the graph $G$).</p>
+              <p>If $G$ has $n$ vertices, any spanning tree of $G$ will contain exactly $n$ vertices and $n - 1$ edges with no cycles.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (vii) -->
+        <div class="question-card" data-tags="sets">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(vii)</span>
+              <span class="question-text">Write the Absorption laws in respect of SET Theory?</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>The <strong>Absorption Laws</strong> in set theory state that for any two sets $A$ and $B$:</p>
+              <ol>
+                <li>$A \cup (A \cap B) = A$</li>
+                <li>$A \cap (A \cup B) = A$</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (viii) -->
+        <div class="question-card" data-tags="logic">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(viii)</span>
+              <span class="question-text">Write the contrapositive of &sim;p &rarr; &sim;q.</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>For an implication statement $P \to Q$, its contrapositive is $\neg Q \to \neg P$.</p>
+              <p>Given implication: $\neg p \to \neg q$.<br>
+              Its contrapositive: $\neg(\neg q) \to \neg(\neg p)$, which simplifies to <strong>$q \to p$</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (ix) -->
+        <div class="question-card" data-tags="logic">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(ix)</span>
+              <span class="question-text">What is the inverse of p &rarr; &sim;q?</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>For an implication statement $P \to Q$, its inverse is $\neg P \to \neg Q$.</p>
+              <p>Given implication: $p \to \neg q$.<br>
+              Its inverse: $\neg p \to \neg(\neg q)$, which simplifies to <strong>$\neg p \to q$</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (x) -->
+        <div class="question-card" data-tags="graphs">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(x)</span>
+              <span class="question-text">"K6 is a planar graph." - State TRUE or FALSE.</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p><strong>FALSE</strong>.</p>
+              <p><strong>Justification:</strong> According to Kuratowski's theorem, a graph is planar if and only if it does not contain a subgraph homeomorphic to $K_5$ (complete graph on 5 vertices) or $K_{3,3}$ (complete bipartite graph on 3,3 vertices). Since $K_6$ contains $K_5$ as a subgraph, it is non-planar.</p>
+              <p>Also, by the edge-vertex bound for planar graphs, $e \leq 3v - 6$. For $K_6$, vertices $v=6$, edges $e = \frac{6 \times 5}{2} = 15$. Here $15 \leq 3(6) - 6 \implies 15 \leq 12$, which is a contradiction. Hence, $K_6$ cannot be planar.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (xi) -->
+        <div class="question-card" data-tags="sets">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(xi)</span>
+              <span class="question-text">What is Cantor's diagonal argument?</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p><strong>Cantor's diagonal argument</strong> is a mathematical proof published by Georg Cantor in 1891 to demonstrate that the set of real numbers (specifically in the interval $[0, 1]$) is uncountably infinite, meaning it cannot be put in a one-to-one correspondence with the set of natural numbers $\mathbb{N}$.</p>
+              <p>The proof constructs a real number whose $i$-th decimal digit differs from the $i$-th decimal digit of the $i$-th real number in any proposed list, thus proving that the constructed number is missing from the list, making any list incomplete.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (xii) -->
+        <div class="question-card" data-tags="sets">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(xii)</span>
+              <span class="question-text">Write the De Morgan's laws of SET operations.</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>De Morgan's Laws in Set Theory state that for any two sets $A$ and $B$:</p>
+              <ol>
+                <li>$(A \cup B)' = A' \cap B'$ &nbsp; (Complement of union is the intersection of complements)</li>
+                <li>$(A \cap B)' = A' \cup B'$ &nbsp; (Complement of intersection is the union of complements)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GROUP B -->
+      <section id="group-b" class="section-block">
+        <div class="section-block-title">
+          <span>Group B: Short Answer Questions</span>
+          <span class="section-mark-badge">3 &times; 5 = 15 Marks</span>
+        </div>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;"><em>Answer any three of the following questions:</em></p>
+
+        <!-- Q2 -->
+        <div class="question-card" data-tags="sets">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">2</span>
+              <span class="question-text">What is an inverse function? How do you obtain the inverse of a function? Explain with an example.</span>
+            </span>
+            <span class="question-marks">5 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p><strong>1. Inverse Function Definition:</strong><br>
+              Let $f: X \to Y$ be a function. The inverse function of $f$, denoted by $f^{-1}: Y \to X$, exists if and only if $f$ is a <strong>bijective</strong> function (both one-to-one/injective and onto/surjective). It maps each element $y \in Y$ to the unique element $x \in X$ such that $f(x) = y$. Thus, $f^{-1}(y) = x \iff f(x) = y$.</p>
+              
+              <p><strong>2. How to Obtain the Inverse:</strong></p>
+              <ol>
+                <li>Set the function equation to $y$, i.e., $y = f(x)$.</li>
+                <li>Solve this equation for $x$ in terms of $y$ to obtain $x = g(y)$.</li>
+                <li>Replace $x$ with $f^{-1}(y)$, giving $f^{-1}(y) = g(y)$.</li>
+                <li>(Optional) Express the final formula with variable $x$, yielding $f^{-1}(x) = g(x)$.</li>
+              </ol>
+
+              <p><strong>3. Example:</strong><br>
+              Find the inverse of $f(x) = 3x + 5$ where $f: \mathbb{R} \to \mathbb{R}$.</p>
+              <ul>
+                <li>Set $y = 3x + 5$</li>
+                <li>Solve for $x$: 
+                  $$ y - 5 = 3x \implies x = \frac{y - 5}{3} $$
+                </li>
+                <li>Therefore, the inverse function is $f^{-1}(y) = \frac{y - 5}{3}$.</li>
+                <li>Replacing the variable: $f^{-1}(x) = \frac{x - 5}{3}$.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="question-card" data-tags="combinatorics">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">3</span>
+              <span class="question-text">Five speakers A, B, C, D and E speak in a meeting one after the other. Find the probability that A speaks before B.</span>
+            </span>
+            <span class="question-marks">5 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p><strong>Method 1: Symmetry Argument (Elegant)</strong></p>
+              <p>For any sequence of speakers, there are exactly two possibilities regarding the relative order of $A$ and $B$: either $A$ speaks before $B$, or $B$ speaks before $A$.</p>
+              <p>Due to complete symmetry, the number of permutations where $A$ speaks before $B$ must be equal to the number of permutations where $B$ speaks before $A$. Therefore, the probability that $A$ speaks before $B$ is:
+              $$ P(A \text{ before } B) = \frac{1}{2} = 0.5 $$</p>
+
+              <p><strong>Method 2: Counting Permutations (Formal)</strong></p>
+              <ul>
+                <li>Total number of ways to arrange the 5 speakers: $N(S) = 5! = 120$ ways.</li>
+                <li>To find the number of favorable arrangements where $A$ comes before $B$:
+                  Select any 2 positions out of 5 for $A$ and $B$ in $\binom{5}{2} = 10$ ways. Place $A$ in the first selected position and $B$ in the second (only 1 way, since $A$ must be before $B$).
+                </li>
+                <li>Arrange the remaining 3 speakers ($C, D, E$) in the remaining 3 positions in $3! = 6$ ways.</li>
+                <li>Number of favorable ways: $N(E) = \binom{5}{2} \times 1 \times 3! = 10 \times 6 = 60$ ways.</li>
+                <li>Probability: 
+                  $$ P = \frac{N(E)}{N(S)} = \frac{60}{120} = \frac{1}{2} $$
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="question-card" data-tags="combinatorics">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">4</span>
+              <span class="question-text">Prove by induction: n^2 + n is even where n is a positive integer.</span>
+            </span>
+            <span class="question-marks">5 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>We will prove $P(n): n^2 + n \text{ is even}$ for all integers $n \geq 1$ using Mathematical Induction.</p>
+              
+              <p><strong>1. Base Case:</strong> For $n = 1$:
+              $$ 1^2 + 1 = 2 $$
+              Since 2 is an even number ($2 = 2 \times 1$), $P(1)$ is true.</p>
+
+              <p><strong>2. Inductive Hypothesis:</strong> Assume $P(k)$ is true for some positive integer $k$, i.e.,
+              $$ k^2 + k = 2m \quad \text{for some integer } m $$</p>
+
+              <p><strong>3. Inductive Step:</strong> We must prove $P(k+1)$ is true, i.e., $(k+1)^2 + (k+1)$ is even.</p>
+              <p>Let's expand:
+              $$ (k+1)^2 + (k+1) = (k^2 + 2k + 1) + (k + 1) $$
+              $$ = (k^2 + k) + 2k + 2 $$
+              Substitute the induction hypothesis $k^2 + k = 2m$:
+              $$ = 2m + 2k + 2 $$
+              $$ = 2(m + k + 1) $$
+              Since $m$, $k$, and $1$ are integers, $m + k + 1$ is an integer (say $q$). Thus,
+              $$ (k+1)^2 + (k+1) = 2q $$
+              which is clearly divisible by 2, and therefore even.</p>
+              
+              <p>Hence, by the principle of mathematical induction, $n^2 + n$ is even for all positive integers $n$.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="question-card" data-tags="combinatorics">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">5</span>
+              <span class="question-text">There are 5 white balls, 4 red balls, and 3 blue balls in a box. If you draw 2 balls at random from the box, what is the probability that both balls are either white or red?</span>
+            </span>
+            <span class="question-marks">5 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p><strong>1. Identify total outcomes:</strong><br>
+              Total number of balls $= 5 \text{ (white)} + 4 \text{ (red)} + 3 \text{ (blue)} = 12 \text{ balls}$.<br>
+              Number of ways to draw 2 balls from 12 is:
+              $$ N(S) = \binom{12}{2} = \frac{12 \times 11}{2} = 66 \text{ ways} $$</p>
+
+              <p><strong>2. Identify favorable outcomes:</strong><br>
+              We want BOTH balls to be white OR BOTH balls to be red. These are mutually exclusive events.</p>
+              <ul>
+                <li>Ways to draw 2 white balls:
+                  $$ N(\text{both White}) = \binom{5}{2} = \frac{5 \times 4}{2} = 10 \text{ ways} $$
+                </li>
+                <li>Ways to draw 2 red balls:
+                  $$ N(\text{both Red}) = \binom{4}{2} = \frac{4 \times 3}{2} = 6 \text{ ways} $$
+                </li>
+              </ul>
+              <p>Total favorable ways $N(E) = 10 + 6 = 16$ ways.</p>
+
+              <p><strong>3. Calculate Probability:</strong>
+              $$ P = \frac{N(E)}{N(S)} = \frac{16}{66} = \frac{8}{33} \approx 0.2424 \quad (24.24\%) $$</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="question-card" data-tags="combinatorics">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">6</span>
+              <span class="question-text">In how many ways can you invite one or more of your five friends to your birthday party?</span>
+            </span>
+            <span class="question-marks">5 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>For each of the 5 friends, we have exactly 2 choices: either invite them, or do not invite them.</p>
+              <p>Therefore, the total number of combination choices for inviting the friends is:
+              $$ 2 \times 2 \times 2 \times 2 \times 2 = 2^5 = 32 \text{ ways} $$</p>
+              <p>However, this includes the single scenario where <strong>none</strong> of the friends are invited (inviting 0 friends). The question specifies that we must invite <strong>one or more</strong> friends.</p>
+              <p>Subtracting the "0 friends invited" option:
+              $$ \text{Total ways} = 2^5 - 1 = 32 - 1 = 31 \text{ ways} $$</p>
+
+              <p><strong>Alternative Method: (Sum of Combinations)</strong><br>
+              We can invite exactly 1, 2, 3, 4, or 5 friends:
+              $$ \text{Total ways} = \binom{5}{1} + \binom{5}{2} + \binom{5}{3} + \binom{5}{4} + \binom{5}{5} $$
+              $$ = 5 + 10 + 10 + 5 + 1 = 31 \text{ ways} $$</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GROUP C -->
+      <section id="group-c" class="section-block">
+        <div class="section-block-title">
+          <span>Group C: Long Answer Questions</span>
+          <span class="section-mark-badge">3 &times; 15 = 45 Marks</span>
+        </div>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;"><em>Answer any three of the following questions:</em></p>
+
+        <!-- Q7 -->
+        <div class="question-card" data-tags="sets">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">7</span>
+              <span class="question-text">Set Theory Definition and Countability Concepts</span>
+            </span>
+            <span class="question-marks">15 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">7(a) Classical Set Theory Definitions and Operations [7 Marks]</h4>
+              <p><strong>Definition of a Set:</strong> In classical set theory, a <em>set</em> is a well-defined collection of distinct objects. The objects are called the elements or members of the set. "Well-defined" means that for any object, it must be possible to determine unambiguously whether it belongs to the set or not.</p>
+              <p><strong>Examples:</strong><br>
+              - $V = \{a, e, i, o, u\}$ (The set of vowels in English)<br>
+              - $P = \{x \in \mathbb{N} \mid x \text{ is prime and } x < 10\} = \{2, 3, 5, 7\}$</p>
+              
+              <p><strong>Common Set Operations:</strong></p>
+              <ul>
+                <li><strong>Union ($A \cup B$):</strong> The set of all elements belonging to $A$ or $B$ or both. <br>
+                Example: $\{1,2\} \cup \{2,3\} = \{1,2,3\}$.</li>
+                <li><strong>Intersection ($A \cap B$):</strong> The set containing elements that belong to both $A$ and $B$. <br>
+                Example: $\{1,2\} \cap \{2,3\} = \{2\}$.</li>
+                <li><strong>Difference ($A - B$):</strong> The set of elements belonging to $A$ but not to $B$. <br>
+                Example: $\{1,2\} - \{2,3\} = \{1\}$.</li>
+                <li><strong>Complement ($A'$ or $A^c$):</strong> The set of elements in the universal set $U$ that are not in $A$. <br>
+                Example: If $U = \{1,2,3,4\}$ and $A = \{1,2\}$, then $A' = \{3,4\}$.</li>
+              </ul>
+
+              <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 1.5rem 0;">
+
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">7(b) Finite, Infinite, Countable and Uncountable Sets [8 Marks]</h4>
+              <ul>
+                <li><strong>Finite Set:</strong> A set whose cardinality (number of elements) is a natural number. It has a bounded, exhaustible count. <br>
+                Example: The set of days in a week ($N = 7$).</li>
+                <li><strong>Infinite Set:</strong> A set that is not finite; its elements cannot be completely listed in a sequence that terminates. <br>
+                Example: The set of all integers $\mathbb{Z}$.</li>
+                <li><strong>Finite Countable Set:</strong> Any finite set is countably finite because we can list its elements and stop.</li>
+                <li><strong>Infinite Countable Set (Denumerable):</strong> An infinite set $S$ whose elements can be put in a 1-to-1 correspondence with the set of natural numbers $\mathbb{N}$. Its cardinality is denoted by $\aleph_0$ (aleph-null).<br>
+                Example: The set of even integers $E = \{2, 4, 6, 8, \dots\}$ is countably infinite because we can map $f(n) = 2n$ for $n \in \mathbb{N}$.</li>
+                <li><strong>Infinite Uncountable Set:</strong> An infinite set that cannot be put in a 1-to-1 correspondence with $\mathbb{N}$. Its cardinality is strictly larger than $\aleph_0$.<br>
+                Example: The set of real numbers $\mathbb{R}$, or the open interval $(0, 1)$, proven uncountable via Cantor's diagonal argument.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="question-card" data-tags="combinatorics">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">8</span>
+              <span class="question-text">Non-negative Solutions & Infinite Primes Proof</span>
+            </span>
+            <span class="question-marks">15 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">8(a) Non-negative Integral Solutions [7 Marks]</h4>
+              <p>Find the number of non-negative integral solutions of:
+              $$ x_1 + x_2 + x_3 + x_4 = 20 $$
+              This is a classical **Stars and Bars** combinatorics problem. The number of ways to distribute $n$ identical objects (stars) into $r$ distinct bins (separated by bars) is:
+              $$ \text{Number of solutions} = \binom{n + r - 1}{r - 1} $$
+              Here, $n = 20$ (the sum) and $r = 4$ (the number of variables $x_1, x_2, x_3, x_4$).</p>
+              
+              <p>Substituting the values:
+              $$ \text{Number of solutions} = \binom{20 + 4 - 1}{4 - 1} = \binom{23}{3} $$
+              $$ = \frac{23 \times 22 \times 21}{3 \times 2 \times 1} $$
+              $$ = 23 \times 11 \times 7 = 1771 $$</p>
+              <p>There are exactly <strong>1771</strong> non-negative integral solutions.</p>
+
+              <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 1.5rem 0;">
+
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">8(b) Proof that the Number of Prime Numbers is Infinite [8 Marks]</h4>
+              <p>We prove this theorem by contradiction using <strong>Euclid's Classical Proof</strong>.</p>
+              <p><strong>Step 1: Assumption</strong><br>
+              Assume that there are only finitely many prime numbers. Let them be listed in a complete set $P = \{p_1, p_2, \dots, p_k\}$, where $p_k$ is the largest prime.</p>
+              
+              <p><strong>Step 2: Construct a new number</strong><br>
+              Consider the integer $N$ formed by multiplying all these primes together and adding 1:
+              $$ N = (p_1 \times p_2 \times \dots \times p_k) + 1 $$</p>
+
+              <p><strong>Step 3: Analyze divisibility of N</strong><br>
+              Since $N > 1$, by the Fundamental Theorem of Arithmetic, $N$ must have at least one prime factor $q$. Now we check if $q$ can be one of the primes in our set $P$:</p>
+              <ul>
+                <li>If $q = p_i$ for some $1 \leq i \leq k$, then $q$ divides the product $(p_1 \times \dots \times p_k)$.</li>
+                <li>Since $q$ also divides $N$, $q$ must divide the difference:
+                  $$ N - (p_1 \times p_2 \times \dots \times p_k) = 1 $$
+                </li>
+                <li>However, no prime number can divide 1. This is a contradiction.</li>
+              </ul>
+              
+              <p><strong>Step 4: Conclusion</strong><br>
+              Therefore, our original assumption that there are only finitely many primes must be false. The set of prime numbers is indeed infinite.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="question-card" data-tags="logic">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">9</span>
+              <span class="question-text">Quantifier Distribution & Logical Tax Evasion Puzzle</span>
+            </span>
+            <span class="question-marks">15 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">9(a) Distribution of Quantifiers [8 Marks]</h4>
+              <p><strong>1. Show that Universal Quantifier distributes over Conjunction:</strong> $\forall x (P(x) \wedge Q(x)) \equiv \forall x P(x) \wedge \forall x Q(x)$</p>
+              <ul>
+                <li><strong>(&rarr;) direction:</strong> Suppose $\forall x (P(x) \wedge Q(x))$ is true. This means for any arbitrary element $a$ in the domain, $P(a) \wedge Q(a)$ is true. Since it is a conjunction, both $P(a)$ is true and $Q(a)$ is true. Since $a$ was arbitrary, $\forall x P(x)$ is true and $\forall x Q(x)$ is true. Thus, $\forall x P(x) \wedge \forall x Q(x)$ is true.</li>
+                <li><strong>(&larr;) direction:</strong> Suppose $\forall x P(x) \wedge \forall x Q(x)$ is true. Then for any arbitrary element $a$, $P(a)$ is true (from $\forall x P(x)$) and $Q(a)$ is true (from $\forall x Q(x)$). Thus $P(a) \wedge Q(a)$ is true. Since $a$ is arbitrary, $\forall x (P(x) \wedge Q(x))$ is true.</li>
+              </ul>
+
+              <p><strong>2. Show that Existential Quantifier distributes over Disjunction:</strong> $\exists x (P(x) \vee Q(x)) \equiv \exists x P(x) \vee \exists x Q(x)$</p>
+              <ul>
+                <li><strong>(&rarr;) direction:</strong> Suppose $\exists x (P(x) \vee Q(x))$ is true. This means there is some element $c$ in the domain such that $P(c) \vee Q(c)$ is true. Thus, either $P(c)$ is true or $Q(c)$ is true. If $P(c)$ is true, then $\exists x P(x)$ is true. If $Q(c)$ is true, then $\exists x Q(x)$ is true. In either case, $\exists x P(x) \vee \exists x Q(x)$ is true.</li>
+                <li><strong>(&larr;) direction:</strong> Suppose $\exists x P(x) \vee \exists x Q(x)$ is true. Case 1: If $\exists x P(x)$ is true, there is some element $c$ such that $P(c)$ is true, which makes $P(c) \vee Q(c)$ true, hence $\exists x (P(x) \vee Q(x))$ is true. Case 2: If $\exists x Q(x)$ is true, there is some element $d$ such that $Q(d)$ is true, making $P(d) \vee Q(d)$ true, hence $\exists x (P(x) \vee Q(x))$ is true.</li>
+              </ul>
+
+              <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 1.5rem 0;">
+
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">9(b) Income Tax Evasion Logic Puzzle [7 Marks]</h4>
+              <p>Let's define boolean variables representing whether each person is guilty:</p>
+              <ul>
+                <li>$B$: Brown is guilty.</li>
+                <li>$J$: Jones is guilty.</li>
+                <li>$S$: Smith is guilty.</li>
+              </ul>
+              <p>Their testimonies are all TRUE. We write them as logic statements:</p>
+              <ol>
+                <li><strong>Brown:</strong> $J \wedge \neg S$ &nbsp; (Jones is guilty, and Smith is innocent)</li>
+                <li><strong>Jones:</strong> $B \to S$ &nbsp; (If Brown is guilty, then Smith is guilty)</li>
+                <li><strong>Smith:</strong> $\neg S \wedge (B \vee J)$ &nbsp; (Smith is innocent, and at least one of Brown or Jones is guilty)</li>
+              </ol>
+
+              <p><strong>Step-by-step Deduction:</strong></p>
+              <ol>
+                <li>From Brown's statement, we know $J$ must be <strong>True</strong> and $S$ must be <strong>False</strong>. (So Jones is guilty, Smith is innocent).</li>
+                <li>From Smith's statement, we have $\neg S \wedge (B \vee J)$. Since $S$ is False, $\neg S$ is True. Since $J$ is True, $(B \vee J)$ is True. This statement is consistent.</li>
+                <li>Now look at Jones's statement: $B \to S$. We know this statement is True. We also know $S$ is False (from step 1).</li>
+                <li>For an implication $B \to S$ to be True when the consequent $S$ is False, the antecedent $B$ <strong>must be False</strong> (otherwise, True &rarr; False would evaluate to False).
+                $$ B \to S \equiv \text{True} \implies B \to \text{False} \equiv \text{True} \implies B = \text{False} $$
+                </li>
+              </ol>
+              <p><strong>Result:</strong></p>
+              <ul>
+                <li><strong>Brown ($B$):</strong> Innocent (False)</li>
+                <li><strong>Jones ($J$):</strong> Guilty (True)</li>
+                <li><strong>Smith ($S$):</strong> Innocent (False)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="question-card" data-tags="graphs">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">10</span>
+              <span class="question-text">Eulerian Walks, Graph Colouring & MST</span>
+            </span>
+            <span class="question-marks">15 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">10(a) Eulerian and Hamiltonian Walks [5 Marks]</h4>
+              <ul>
+                <li><strong>Eulerian Path/Walk:</strong> A walk in a graph that visits every <strong>edge</strong> exactly once. A connected graph has an Eulerian path if and only if it has exactly zero or two vertices of odd degree.</li>
+                <li><strong>Eulerian Circuit:</strong> An Eulerian path that starts and ends at the same vertex. A connected graph has an Euler circuit if and only if every vertex has an even degree.</li>
+                <li><strong>Hamiltonian Path/Walk:</strong> A path in a graph that visits every <strong>vertex</strong> exactly once. Finding a Hamiltonian path is an NP-complete problem.</li>
+                <li><strong>Hamiltonian Cycle/Circuit:</strong> A closed loop that visits every vertex in the graph exactly once and returns to the start vertex.</li>
+              </ul>
+
+              <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 1.5rem 0;">
+
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">10(b) Vertex Colouring vs. Edge Colouring [5 Marks]</h4>
+              <ul>
+                <li><strong>Vertex Colouring:</strong> An assignment of colors to the vertices of a graph $G$ such that no two adjacent vertices share the same color. The minimum number of colors needed to color a graph $G$ is called its <em>chromatic number</em>, denoted by $\chi(G)$.</li>
+                <li><strong>Edge Colouring:</strong> An assignment of colors to the edges of a graph $G$ such that no two edges incident on the same vertex share the same color. The minimum number of colors required for edge coloring is called the <em>chromatic index</em> of the graph, denoted by $\chi'(G)$.</li>
+              </ul>
+
+              <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 1.5rem 0;">
+
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">10(c) Minimum Spanning Tree (MST) Definition & Example [5 Marks]</h4>
+              <p>For a connected, edge-weighted graph, a <strong>Minimum Spanning Tree (MST)</strong> is a spanning tree (subgraph containing all vertices without cycles) whose sum of edge weights is minimized.</p>
+              <p><strong>Example:</strong> Consider a triangle graph with vertices $A, B, C$ and edge weights: $w(A, B) = 4$, $w(B, C) = 1$, $w(A, C) = 3$.<br>
+              - Spanning Tree 1: Edges $(A,B), (B,C)$ &rarr; Total Weight $= 4 + 1 = 5$.<br>
+              - Spanning Tree 2: Edges $(A,C), (B,C)$ &rarr; Total Weight $= 3 + 1 = 4$.<br>
+              Thus, Spanning Tree 2 is the MST with a total minimum cost of 4.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q11 -->
+        <div class="question-card" data-tags="graphs">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">11</span>
+              <span class="question-text">Bipartite Graphs & Chromatic Polynomial of Kn</span>
+            </span>
+            <span class="question-marks">15 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">11(a) Bipartite Graphs and Condition [5 Marks]</h4>
+              <p>A simple graph $G = (V,E)$ is <strong>bipartite</strong> if its vertex set $V$ can be partitioned into two disjoint sets $V_1$ and $V_2$ such that every edge in $E$ connects a vertex in $V_1$ to a vertex in $V_2$. No edges can exist between vertices within $V_1$ or within $V_2$.</p>
+              <p><strong>Bipartiteness Test (Theorem):</strong> A graph is bipartite if and only if it contains <strong>no odd cycles</strong> (cycles of odd length like $C_3, C_5$, etc.). This can be determined in $O(V+E)$ time using Breadth-First Search (BFS) or Depth-First Search (DFS) bipartiteness 2-coloring checks.</p>
+
+              <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 1.5rem 0;">
+
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">11(b) Proof that Trees are Bipartite Graphs [5 Marks]</h4>
+              <p><strong>Proof:</strong> Let $T$ be a tree. By definition, a tree is a connected graph containing no cycles. Since it contains no cycles, it has no odd cycles. Therefore, by the bipartiteness theorem (a graph is bipartite if and only if it has no odd cycles), any tree must be a bipartite graph.</p>
+              <p><strong>Alternative Construction Proof:</strong></p>
+              <ol>
+                <li>Choose an arbitrary root vertex $r \in V(T)$.</li>
+                <li>Define the partition sets:
+                  $$ V_1 = \{v \in V(T) \mid \text{distance}(r, v) \text{ is even}\} $$
+                  $$ V_2 = \{v \in V(T) \mid \text{distance}(r, v) \text{ is odd}\} $$
+                </li>
+                <li>Since any edge in a tree connects a node at distance $k$ from $r$ to a node at distance $k \pm 1$, it must connect a vertex in $V_1$ to a vertex in $V_2$. Thus, $T$ is bipartite.</li>
+              </ol>
+
+              <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 1.5rem 0;">
+
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">11(c) Chromatic Polynomial of Complete Graph $K_n$ [5 Marks]</h4>
+              <p>The <strong>chromatic polynomial</strong> $P_G(\lambda)$ represents the number of ways to color the vertices of a graph $G$ using $\lambda$ colors such that no adjacent vertices have the same color.</p>
+              <p>For a complete graph $K_n$, all $n$ vertices are mutually adjacent. Let's color them one by one:</p>
+              <ol>
+                <li>For the 1st vertex: we have $\lambda$ color choices.</li>
+                <li>For the 2nd vertex: since it is connected to the first, we have $(\lambda - 1)$ choices.</li>
+                <li>For the 3rd vertex: since it is connected to the first two, we have $(\lambda - 2)$ choices.</li>
+                <li>Continuing this, for the $i$-th vertex: we have $(\lambda - i + 1)$ choices.</li>
+              </ol>
+              <p>Applying the product rule, the chromatic polynomial of $K_n$ is:
+              $$ P_{K_n}(\lambda) = \lambda(\lambda - 1)(\lambda - 2)\dots(\lambda - n + 1) $$
+              This is also written as the falling factorial: $\lambda^{(n)}$ or $\frac{\lambda!}{(\lambda-n)!}$.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTERACTIVE WIDGET: TRUTH TABLE GENERATOR -->
+      <section id="logic-tool" class="section-block">
+        <div class="section-block-title">
+          <span>Interactive Logic Explorer</span>
+          <span class="section-mark-badge">Widget</span>
+        </div>
+        <div class="widget-container">
+          <div class="widget-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-color);"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+            Truth Table Generator
+          </div>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+            Test logic equations from Group A and Group C. Use notation: <code>&amp;</code> for AND, <code>|</code> for OR, <code>~</code> for NOT, <code>-&gt;</code> for Implication, and <code>&lt;-&gt;</code> for Equivalence.
+          </p>
+          
+          <div class="truth-table-input-group">
+            <input type="text" id="logic-expr" class="truth-table-expr" value="(p -> q) & (q -> r) -> (p -> r)" placeholder="Enter expression, e.g. p & ~q | r">
+            <button id="generate-table-btn" class="btn btn-primary">Generate</button>
+          </div>
+          
+          <div class="truth-table-output">
+            <table class="table-premium" id="truth-table-result">
+              <!-- Rendered dynamically -->
+            </table>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 MAKAUT Discrete Mathematics PCC-CS401 Solved Papers. Designed with premium visual interfaces.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  
+  <!-- Interactive logic table builder JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const btn = document.getElementById("generate-table-btn");
+      const input = document.getElementById("logic-expr");
+      
+      if (btn && input) {
+        btn.addEventListener("click", buildTruthTable);
+        // Initial build
+        buildTruthTable();
+      }
+    });
+
+    function parseVariables(expr) {
+      // Find all single letter variables in expression
+      const vars = [...new Set(expr.match(/[a-z]/g))].sort();
+      return vars;
+    }
+
+    function evaluateExpression(expr, varValues) {
+      let sanitized = expr;
+      
+      // Replace values
+      for (const [v, val] of Object.entries(varValues)) {
+        sanitized = sanitized.replaceAll(v, val ? " true " : " false ");
+      }
+      
+      // Replace logic symbols
+      sanitized = sanitized.replaceAll("~", " ! ");
+      sanitized = sanitized.replaceAll("&", " && ");
+      sanitized = sanitized.replaceAll("|", " || ");
+      
+      // Implication: p -> q is !p || q
+      // We parse simple implications
+      while (sanitized.includes("->")) {
+        // Find implications and replace them
+        // For security/simplicity we can use a safe regex evaluator or js function mapping
+        // Let's implement implication conversion: A -> B becomes !(A) || B
+        // And equivalence: A <-> B becomes A === B
+        sanitized = sanitized.replace(/([a-zA-Z! \(\)]+)\s*->\s*([a-zA-Z! \(\)]+)/g, "(!($1) || ($2))");
+      }
+
+      while (sanitized.includes("<->")) {
+        sanitized = sanitized.replace(/([a-zA-Z! \(\)\|&]+)\s*<->\s*([a-zA-Z! \(\)\|&]+)/g, "(($1) === ($2))");
+      }
+
+      try {
+        // Safe evaluation since it only contains true, false, !, &&, ||, === and parentheses
+        return Function(`return (${sanitized})`)();
+      } catch (e) {
+        console.error(e);
+        return null;
+      }
+    }
+
+    function buildTruthTable() {
+      const expr = document.getElementById("logic-expr").value;
+      const table = document.getElementById("truth-table-result");
+      if (!table) return;
+
+      table.innerHTML = "";
+      
+      const vars = parseVariables(expr);
+      if (vars.length === 0 || vars.length > 4) {
+        table.innerHTML = `<tr><td style="color: #ef4444; padding: 1rem;">Please enter an expression with 1 to 4 variables (e.g., p, q, r).</td></tr>`;
+        return;
+      }
+
+      // Generate table header
+      const headerRow = document.createElement("tr");
+      vars.forEach(v => {
+        const th = document.createElement("th");
+        th.textContent = v;
+        headerRow.appendChild(th);
+      });
+      const thResult = document.createElement("th");
+      thResult.textContent = expr;
+      headerRow.appendChild(thResult);
+      table.appendChild(headerRow);
+
+      // Generate rows (2^n combinations)
+      const numRows = Math.pow(2, vars.length);
+      for (let i = 0; i < numRows; i++) {
+        const tr = document.createElement("tr");
+        const varValues = {};
+        
+        vars.forEach((v, index) => {
+          // Determine truth value for this column
+          const val = ((i >> (vars.length - 1 - index)) & 1) === 0; // True then False
+          varValues[v] = val;
+          
+          const td = document.createElement("td");
+          td.innerHTML = val ? `<span class="text-true">T</span>` : `<span class="text-false">F</span>`;
+          tr.appendChild(td);
+        });
+
+        const resultVal = evaluateExpression(expr, varValues);
+        const tdRes = document.createElement("td");
+        if (resultVal === null) {
+          tdRes.textContent = "Error";
+          tdRes.style.color = "#ef4444";
+        } else {
+          tdRes.innerHTML = resultVal ? `<span class="text-true">T</span>` : `<span class="text-false">F</span>`;
+        }
+        tr.appendChild(tdRes);
+        table.appendChild(tr);
+      }
+    }
+  </script>
+</body>
+</html>

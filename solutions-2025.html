@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2025 Solved Paper | Discrete Mathematics (PCC-CS401)</title>
+  <meta name="description" content="Detailed step-by-step solutions to MAKAUT B.Tech CSE 4th Sem 2025 Discrete Mathematics exam paper.">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-color);">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+        </svg>
+        <span>DiscreteMaths</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="solutions-2025.html" class="active">2025 Solved</a></li>
+        <li><a href="solutions-2024.html">2024 Solved</a></li>
+        <li><a href="solutions-2023.html">2023 Solved</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme"></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content Container -->
+  <div class="container solution-layout">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-heading">2025 Exam Sections</div>
+      <ul class="sidebar-menu">
+        <li class="sidebar-menu-item"><a href="#group-a" class="active">Group A (Very Short)</a></li>
+        <li class="sidebar-menu-item"><a href="#group-b">Group B (Short)</a></li>
+        <li class="sidebar-menu-item"><a href="#group-c">Group C (Long)</a></li>
+      </ul>
+      
+      <div class="sidebar-heading" style="margin-top: 2rem;">Interactive Tools</div>
+      <div class="widget-container" style="padding: 1rem; font-size: 0.85rem;">
+        <h4 style="margin-bottom: 0.5rem; color: var(--accent-color);">Set Venn Explorer</h4>
+        <p style="margin-bottom: 0.75rem; color: var(--text-secondary); font-size: 0.8rem;">Explore inclusion-exclusion course intersections.</p>
+        <a href="#venn-tool" class="btn btn-primary" style="display: block; text-align: center; text-decoration: none; padding: 0.4rem;">Launch Tool</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content-area">
+      <div class="paper-header">
+        <span class="year-badge">Solved Paper</span>
+        <h1>Discrete Mathematics 2025</h1>
+        <div class="paper-meta-info">
+          <span><strong>Course:</strong> B.Tech CSE/CS 4th Semester</span>
+          <span><strong>Paper Code:</strong> PCC-CS401</span>
+          <span><strong>Full Marks:</strong> 70</span>
+          <span><strong>Time:</strong> 3 Hours</span>
+        </div>
+      </div>
+
+      <!-- GROUP A -->
+      <section id="group-a" class="section-block">
+        <div class="section-block-title">
+          <span>Group A: Very Short Answer Questions</span>
+          <span class="section-mark-badge">10 &times; 1 = 10 Marks</span>
+        </div>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;"><em>Answer any ten of the following questions:</em></p>
+
+        <!-- Q1 (i) -->
+        <div class="question-card" data-tags="graphs">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(i)</span>
+              <span class="question-text">What is Pendent vertex and Isolated vertex. Give examples.</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <ul>
+                <li><strong>Pendent Vertex:</strong> A vertex in a graph that has a degree of exactly 1 (it is connected to only one edge). <br>
+                <em>Example:</em> In a path graph $A - B - C$, the endpoints $A$ and $C$ are pendent vertices.</li>
+                <li><strong>Isolated Vertex:</strong> A vertex in a graph that has a degree of 0 (it is not connected to any edges). <br>
+                <em>Example:</em> In a graph representing a social network, a user with 0 friends is represented as an isolated vertex.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (ii) -->
+        <div class="question-card" data-tags="sets">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(ii)</span>
+              <span class="question-text">Define Cantor's Power Set Theorem.</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p><strong>Cantor's Theorem</strong> states that for any set $A$ (whether finite or infinite), the cardinality of $A$ is strictly less than the cardinality of its power set $P(A)$.</p>
+              <p>Mathematically:
+              $$ |A| < |P(A)| \quad \text{or} \quad |A| < 2^{|A|} $$
+              This theorem implies that there is no surjective map from $A$ to its power set $P(A)$.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (iii) -->
+        <div class="question-card" data-tags="combinatorics">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(iii)</span>
+              <span class="question-text">How many ways can you arrange 3 different books on a shelf?</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>The number of ways to arrange $n$ distinct objects is given by $n!$ (n-factorial).</p>
+              <p>For 3 different books:
+              $$ 3! = 3 \times 2 \times 1 = 6 \text{ ways} $$</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (iv) -->
+        <div class="question-card" data-tags="logic">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(iv)</span>
+              <span class="question-text">Give examples of one proposition and one non-proposition statements.</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <ul>
+                <li><strong>Proposition:</strong> A declarative sentence that is either true or false, but not both. <br>
+                <em>Example:</em> "Kolkata is the capital of West Bengal." (This is a proposition, and its truth value is True).</li>
+                <li><strong>Non-Proposition:</strong> A sentence that cannot be classified as having a truth value (e.g. commands, questions, or exclamations). <br>
+                <em>Example:</em> "Please submit the assignment on time." (This is an imperative command, not a proposition).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (v) -->
+        <div class="question-card" data-tags="groups">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(v)</span>
+              <span class="question-text">What is the number of elements of order 10 in Z_10?</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>In a cyclic group $\mathbb{Z}_n$ of order $n$, the number of elements of order $d$ (where $d$ is a divisor of $n$) is given by Euler's totient function $\phi(d)$.</p>
+              <p>Here, we are looking for elements of order $d=10$ in the group $\mathbb{Z}_{10}$ ($n=10$). Since 10 divides 10, the count is:
+              $$ \phi(10) = 10 \times \left(1 - \frac{1}{2}\right) \times \left(1 - \frac{1}{5}\right) = 10 \times \frac{1}{2} \times \frac{4}{5} = 4 $$
+              The 4 elements are the generators of the group: $\{1, 3, 7, 9\}$.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (vi) -->
+        <div class="question-card" data-tags="graphs">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(vi)</span>
+              <span class="question-text">Define path for a graph.</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>A <strong>path</strong> in a graph $G = (V,E)$ is a sequence of distinct vertices $v_0, v_1, \dots, v_k$ such that $(v_i, v_{i+1}) \in E$ for all $0 \le i < k$. In a path, no vertex is repeated.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (vii) -->
+        <div class="question-card" data-tags="combinatorics">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(vii)</span>
+              <span class="question-text">State the fundamental theorem of arithmetic.</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>The <strong>Fundamental Theorem of Arithmetic</strong> states that every integer $n > 1$ is either a prime number itself or can be represented uniquely as a product of prime numbers, up to the order of the prime factors.</p>
+              <p>For example, $60 = 2^2 \times 3 \times 5$.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (viii) -->
+        <div class="question-card" data-tags="combinatorics">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(viii)</span>
+              <span class="question-text">How many ways can 4 people sit in a row if 2 specific people must sit together?</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>Let the 4 people be $A, B, C, D$. Suppose $A$ and $B$ must sit together.</p>
+              <ol>
+                <li>Treat the pair $(A, B)$ as a single entity. Now we have 3 entities to arrange on the shelf/seats: $(AB), C, D$.</li>
+                <li>The number of ways to arrange 3 entities in a row is:
+                  $$ 3! = 6 \text{ ways} $$
+                </li>
+                <li>Within the entity $(AB)$, $A$ and $B$ can change places among themselves in:
+                  $$ 2! = 2 \text{ ways} \quad (AB \text{ or } BA) $$
+                </li>
+                <li>Using the multiplication rule, the total number of seating arrangements is:
+                  $$ 6 \times 2 = 12 \text{ ways} $$
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (ix) -->
+        <div class="question-card" data-tags="logic">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(ix)</span>
+              <span class="question-text">What is the inverse of p &rarr; &sim;q?</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>The inverse of the implication $P \to Q$ is $\neg P \to \neg Q$.</p>
+              <p>For $p \to \neg q$, the inverse is:
+              $$ \neg p \to \neg(\neg q) \equiv \neg p \to q $$</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (x) -->
+        <div class="question-card" data-tags="sets">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(x)</span>
+              <span class="question-text">What is the domain of the relation R = {(1, 2), (2, 3), (5, 4)}?</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>The <strong>domain</strong> of a binary relation $R$ is the set of all first coordinates of the ordered pairs in $R$.</p>
+              <p>Given $R = \{(1, 2), (2, 3), (5, 4)\}$, the domain is:
+              $$ \text{Domain}(R) = \{1, 2, 5\} $$</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (xi) -->
+        <div class="question-card" data-tags="graphs">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(xi)</span>
+              <span class="question-text">For which m and n does the graph K_m,n contain a Euler path and Euler circuit? Explain.</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>In the complete bipartite graph $K_{m,n}$, the vertex set is partitioned into a set of size $m$ (where each vertex has degree $n$) and a set of size $n$ (where each vertex has degree $m$).</p>
+              <ul>
+                <li><strong>Euler Circuit:</strong> A connected graph contains an Euler circuit if and only if every vertex has an even degree. <br>
+                Therefore, $K_{m,n}$ has an Euler circuit if and only if **both $m$ and $n$ are even**.</li>
+                <li><strong>Euler Path:</strong> A connected graph contains an Euler path if and only if the number of odd-degree vertices is exactly 0 or 2.
+                  - If 0 odd vertices: both $m$ and $n$ are even.<br>
+                  - If 2 odd vertices: this happens if either $m$ is odd and $n=2$ (since the 2 vertices of the second set will have degree $m$ (odd), and the $m$ vertices of the first set will have degree 2 (even)); or $n$ is odd and $m=2$.<br>
+                  Therefore, $K_{m,n}$ has an Euler path if and only if: 
+                  <strong>(both $m$ and $n$ are even) OR ($m$ is odd and $n=2$) OR ($n$ is odd and $m=2$)</strong>.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q1 (xii) -->
+        <div class="question-card" data-tags="sets">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">1(xii)</span>
+              <span class="question-text">If A = {1, 2, 3} and B = {2, 3, 4}, then determine the value of A &Delta; B.</span>
+            </span>
+            <span class="question-marks">1 Mark</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>The symmetric difference $A \triangle B = (A \cup B) - (A \cap B)$.</p>
+              <ul>
+                <li>$A \cup B = \{1, 2, 3, 4\}$</li>
+                <li>$A \cap B = \{2, 3\}$</li>
+              </ul>
+              <p>Therefore:
+              $$ A \triangle B = \{1, 2, 3, 4\} - \{2, 3\} = \{1, 4\} $$</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GROUP B -->
+      <section id="group-b" class="section-block">
+        <div class="section-block-title">
+          <span>Group B: Short Answer Questions</span>
+          <span class="section-mark-badge">3 &times; 5 = 15 Marks</span>
+        </div>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;"><em>Answer any three of the following questions:</em></p>
+
+        <!-- Q2 -->
+        <div class="question-card" data-tags="combinatorics">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">2</span>
+              <span class="question-text">Committee Selection with Women Constraint</span>
+            </span>
+            <span class="question-marks">5 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p><strong>Problem:</strong> Form a committee of 4 members from a group of 10 people (4 women, 6 men) such that at least 1 member is a woman.</p>
+              
+              <p><strong>Method 1: Complement Method (Simpler)</strong></p>
+              <ol>
+                <li>Find total ways to form a committee of 4 from 10 people without restrictions:
+                  $$ \text{Total ways} = \binom{10}{4} = \frac{10 \times 9 \times 8 \times 7}{4 \times 3 \times 2 \times 1} = 210 \text{ ways} $$
+                </li>
+                <li>Find the number of ways to form a committee containing <strong>no women</strong> (i.e., all 4 members are men chosen from the 6 available men):
+                  $$ \text{All Men} = \binom{6}{4} = \binom{6}{2} = \frac{6 \times 5}{2} = 15 \text{ ways} $$
+                </li>
+                <li>Subtract the "all men" scenario from the total ways:
+                  $$ \text{At least 1 woman} = \text{Total} - \text{All Men} = 210 - 15 = 195 \text{ ways} $$
+                </li>
+              </ol>
+
+              <p><strong>Method 2: Direct Addition</strong><br>
+              We sum the combinations for exactly 1, 2, 3, or 4 women:
+              $$ \text{Total} = \binom{4}{1}\binom{6}{3} + \binom{4}{2}\binom{6}{2} + \binom{4}{3}\binom{6}{1} + \binom{4}{4}\binom{6}{0} $$
+              $$ = (4 \times 20) + (6 \times 15) + (4 \times 6) + (1 \times 1) $$
+              $$ = 80 + 90 + 24 + 1 = 195 \text{ ways} $$</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="question-card" data-tags="sets">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">3</span>
+              <span class="question-text">Let f(x) = x + 2 and g(x) = x^3. Then find out f(g(x)) & g(f(x)).</span>
+            </span>
+            <span class="question-marks">5 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>Given functions: $f(x) = x + 2$ and $g(x) = x^3$.</p>
+              <ol>
+                <li><strong>Find $f(g(x))$:</strong><br>
+                  Substitute $g(x)$ into the function $f$:
+                  $$ f(g(x)) = f(x^3) = x^3 + 2 $$
+                </li>
+                <li><strong>Find $g(f(x))$:</strong><br>
+                  Substitute $f(x)$ into the function $g$:
+                  $$ g(f(x)) = g(x + 2) = (x + 2)^3 $$
+                  Expanding using the binomial formula $(a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3$:
+                  $$ g(f(x)) = x^3 + 3x^2(2) + 3x(2^2) + 2^3 $$
+                  $$ = x^3 + 6x^2 + 12x + 8 $$
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="question-card" data-tags="logic">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">4</span>
+              <span class="question-text">Are the statements "it will not rain or snow" and "it will not rain and it will not snow" logically equivalent? Justify with truth table.</span>
+            </span>
+            <span class="question-marks">5 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p><strong>1. Translate statements to propositional variables:</strong><br>
+              - Let $p$: "It will rain."<br>
+              - Let $q$: "It will snow."</p>
+              <ul>
+                <li>Statement 1: "It will not rain or snow" &rarr; <strong>$\neg(p \vee q)$</strong></li>
+                <li>Statement 2: "It will not rain and it will not snow" &rarr; <strong>$\neg p \wedge \neg q$</strong></li>
+              </ul>
+              <p>These two statements are logically equivalent by **De Morgan's First Law**.</p>
+
+              <p><strong>2. Truth Table Justification:</strong></p>
+              <table class="table-premium">
+                <thead>
+                  <tr>
+                    <th>$p$</th>
+                    <th>$q$</th>
+                    <th>$p \vee q$</th>
+                    <th>$\neg(p \vee q)$</th>
+                    <th>$\neg p$</th>
+                    <th>$\neg q$</th>
+                    <th>$\neg p \wedge \neg q$</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>T</td>
+                    <td>T</td>
+                    <td>T</td>
+                    <td><span class="text-false">F</span></td>
+                    <td>F</td>
+                    <td>F</td>
+                    <td><span class="text-false">F</span></td>
+                  </tr>
+                  <tr>
+                    <td>T</td>
+                    <td>F</td>
+                    <td>T</td>
+                    <td><span class="text-false">F</span></td>
+                    <td>F</td>
+                    <td>T</td>
+                    <td><span class="text-false">F</span></td>
+                  </tr>
+                  <tr>
+                    <td>F</td>
+                    <td>T</td>
+                    <td>T</td>
+                    <td><span class="text-false">F</span></td>
+                    <td>T</td>
+                    <td>F</td>
+                    <td><span class="text-false">F</span></td>
+                  </tr>
+                  <tr>
+                    <td>F</td>
+                    <td>F</td>
+                    <td>F</td>
+                    <td><span class="text-true">T</span></td>
+                    <td>T</td>
+                    <td>T</td>
+                    <td><span class="text-true">T</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>Since the column for $\neg(p \vee q)$ and the column for $\neg p \wedge \neg q$ are identical (both have truth values $F, F, F, T$), the statements are <strong>logically equivalent</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="question-card" data-tags="groups">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">5</span>
+              <span class="question-text">Show that the set G = {1,2,3,4,5,6} forms a cyclic group under multiplication modulo 7. Find all generators.</span>
+            </span>
+            <span class="question-marks">5 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p>Let $G = \{1, 2, 3, 4, 5, 6\}$ and the operation be multiplication modulo 7 ($\times_7$).</p>
+              
+              <p><strong>1. Verify Group Axioms:</strong></p>
+              <ul>
+                <li><strong>Closure:</strong> Multiply any two elements and take remainder modulo 7. Since 7 is prime, all products are in $\{1, \dots, 6\}$. (e.g. $3 \times_7 5 = 15 \equiv 1 \in G$).</li>
+                <li><strong>Associativity:</strong> Multiplication of integers is associative.</li>
+                <li><strong>Identity:</strong> The element $1 \in G$ acts as identity: $1 \times_7 a = a \times_7 1 = a$.</li>
+                <li><strong>Inverse:</strong> For each element $a$, there exists $a^{-1}$ such that $a \times_7 a^{-1} \equiv 1$:
+                  $1^{-1}=1, 2^{-1}=4, 3^{-1}=5, 4^{-1}=2, 5^{-1}=3, 6^{-1}=6$. All inverses lie in $G$.
+                </li>
+              </ul>
+
+              <p><strong>2. Show G is Cyclic (Find a Generator):</strong><br>
+              An element $g$ is a generator if its powers generate the entire group $G$. Let's test $g = 3$:</p>
+              <ul>
+                <li>$3^1 \equiv 3 \pmod 7$</li>
+                <li>$3^2 = 9 \equiv 2 \pmod 7$</li>
+                <li>$3^3 = 6 \equiv 6 \pmod 7$</li>
+                <li>$3^4 = 18 \equiv 4 \pmod 7$</li>
+                <li>$3^5 = 12 \equiv 5 \pmod 7$</li>
+                <li>$3^6 = 15 \equiv 1 \pmod 7$</li>
+              </ul>
+              <p>Since $\langle 3 \rangle = \{3, 2, 6, 4, 5, 1\} = G$, $3$ generates the group. Thus, $G$ is a cyclic group of order 6.</p>
+              
+              <p><strong>3. Find All Generators:</strong><br>
+              In a cyclic group of order 6 generated by $a$, the other generators are of the form $a^k$ where $\gcd(k, 6) = 1$. The integers coprime to 6 are $\{1, 5\}$.<br>
+              - Generator 1: $3^1 = 3$<br>
+              - Generator 2: $3^5 \equiv 5 \pmod 7$.<br>
+              So, the generators of $(G, \times_7)$ are <strong>3 and 5</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="question-card" data-tags="graphs">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">6</span>
+              <span class="question-text">Draw and explain the graph coloring problem taking four different colors. What is the chromatic number of a planar graph?</span>
+            </span>
+            <span class="question-marks">5 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <p><strong>1. Graph Coloring Problem:</strong><br>
+              Graph vertex coloring is an assignment of labels (called "colors") to the vertices of a graph such that no two adjacent vertices share the same color. The objective is to minimize the total number of colors used.</p>
+              
+              <p><strong>2. Example with 4 Colors:</strong><br>
+              Consider a wheel graph $W_4$ (a central vertex connected to a outer triangle cycle $C_3$). Let the vertices be $V = \{Center, A, B, C\}$.
+              - The central vertex must have a unique color (Color 1).
+              - The outer three cycle vertices $A, B, C$ form a $K_3$ triangle. They must all be colored differently from each other and from the center.
+              - Therefore, we color $A$ with Color 2, $B$ with Color 3, and $C$ with Color 4.
+              This requires exactly 4 colors to color successfully.</p>
+
+              <p><strong>3. Chromatic Number of Planar Graphs:</strong><br>
+              By the **Four Color Theorem** (proven by Appel and Haken in 1976), the vertices of any planar graph can be colored using at most 4 colors such that no two adjacent vertices share the same color.
+              Therefore, the chromatic number $\chi(G)$ of any planar graph $G$ satisfies:
+              $$ \chi(G) \leq 4 $$</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GROUP C -->
+      <section id="group-c" class="section-block">
+        <div class="section-block-title">
+          <span>Group C: Long Answer Questions</span>
+          <span class="section-mark-badge">3 &times; 15 = 45 Marks</span>
+        </div>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;"><em>Answer any three of the following questions:</em></p>
+
+        <!-- Q7 -->
+        <div class="question-card" data-tags="graphs">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">7</span>
+              <span class="question-text">Graph Theorems & Degree Equalities</span>
+            </span>
+            <span class="question-marks">15 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">7(a) Prove that the Sum of Degrees is Even (Handshaking Lemma) [5 Marks]</h4>
+              <p><strong>Theorem:</strong> In any graph $G = (V,E)$, the sum of the degrees of all vertices is equal to twice the number of edges:
+              $$ \sum_{v \in V} \text{deg}(v) = 2|E| $$</p>
+              <p><strong>Proof:</strong></p>
+              <ol>
+                <li>Every edge $e = (u, v)$ in the graph connects two vertices, $u$ and $v$.</li>
+                <li>When we compute the degree of a vertex, we count the number of edges incident to it.</li>
+                <li>If we sum the degrees of all vertices in $V$, each edge $e = (u,v)$ contributes exactly once to $\text{deg}(u)$ and exactly once to $\text{deg}(v)$.</li>
+                <li>Therefore, every edge is counted exactly twice in the sum of degrees.</li>
+                <li>Thus, $\sum_{v \in V} \text{deg}(v) = 2|E|$. Since $2|E|$ is a multiple of 2, the sum of degrees is always even.</li>
+              </ol>
+
+              <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 1.5rem 0;">
+
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">7(b) Complete Graph Edges Proof [5 Marks]</h4>
+              <p><strong>Theorem:</strong> A complete graph $K_n$ on $n$ vertices has exactly $\frac{n(n-1)}{2}$ edges.</p>
+              <p><strong>Proof:</strong></p>
+              <ol>
+                <li>In a complete graph $K_n$, every vertex is connected to every other vertex by a single edge.</li>
+                <li>Thus, each of the $n$ vertices is adjacent to the remaining $n - 1$ vertices. The degree of every vertex is $v_i = n - 1$.</li>
+                <li>Using the Handshaking Lemma:
+                  $$ \sum_{i=1}^n \text{deg}(v_i) = 2|E| $$
+                  $$ \sum_{i=1}^n (n-1) = 2|E| \implies n(n-1) = 2|E| $$
+                  $$ |E| = \frac{n(n-1)}{2} $$
+                </li>
+              </ol>
+
+              <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 1.5rem 0;">
+
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">7(c) Simple Graph Same Degree Vertices Proof [5 Marks]</h4>
+              <p><strong>Theorem:</strong> Any simple finite graph with $n \geq 2$ vertices must contain at least two vertices of the same degree.</p>
+              <p><strong>Proof using Pigeonhole Principle:</strong></p>
+              <ol>
+                <li>In a simple graph with $n$ vertices, the degree of any vertex $v$ must be an integer between $0$ and $n-1$ (inclusive).</li>
+                <li>However, notice that a graph cannot contain both a vertex of degree 0 (isolated) and a vertex of degree $n-1$ (connected to all other vertices).
+                  - If there is a vertex of degree 0, the maximum possible degree of any vertex is $n-2$.
+                  - If there is a vertex of degree $n-1$, the minimum possible degree of any vertex is 1.
+                </li>
+                <li>Thus, the possible degrees for the $n$ vertices must fall into one of two sets:
+                  - Case 1 (No vertex of degree $n-1$): Degrees belong to $\{0, 1, 2, \dots, n-2\}$ (size $n-1$).
+                  - Case 2 (No vertex of degree 0): Degrees belong to $\{1, 2, 3, \dots, n-1\}$ (size $n-1$).
+                </li>
+                <li>In either case, we have $n$ vertices (pigeons) and $n-1$ possible degree values (pigeonholes).</li>
+                <li>By the Pigeonhole Principle, since $n > n-1$, at least two vertices must have the same degree.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="question-card" data-tags="sets">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">8</span>
+              <span class="question-text">Mappings & Set Algebra Proofs</span>
+            </span>
+            <span class="question-marks">15 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">8(a) Injective, Surjective, and Bijective Mappings [8 Marks]</h4>
+              <ul>
+                <li><strong>Injective (One-to-One):</strong> A function $f: X \to Y$ is injective if distinct elements in the domain map to distinct elements in the codomain.
+                  $$ f(a) = f(b) \implies a = b $$
+                  <em>Example:</em> $f: \mathbb{R} \to \mathbb{R}$ defined by $f(x) = 2x + 3$.
+                </li>
+                <li><strong>Surjective (Onto):</strong> A function $f: X \to Y$ is surjective if every element in the codomain has at least one pre-image in the domain.
+                  $$ \text{Range}(f) = Y \quad \text{or} \quad \forall y \in Y, \exists x \in X \text{ s.t. } f(x) = y $$
+                  <em>Example:</em> $f: \mathbb{R} \to \mathbb{R}$ defined by $f(x) = x^3$.
+                </li>
+                <li><strong>Bijective (One-to-One and Onto):</strong> A function that is both injective and surjective.
+                  <em>Example:</em> $f: \mathbb{R} \to \mathbb{R}$ defined by $f(x) = x$.
+                </li>
+              </ul>
+
+              <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 1.5rem 0;">
+
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">8(b) Set Operations Verification [4 Marks]</h4>
+              <p>Given $P = \{4, 5, 6, 7, 8\}$ and $Q = \{6, 7, 8, 10\}$:</p>
+              <ol>
+                <li><strong>Is $P - Q = Q - P$?</strong><br>
+                  - $P - Q = \{4, 5\}$<br>
+                  - $Q - P = \{10\}$<br>
+                  Since $\{4, 5\} \neq \{10\}$, the answer is <strong>No</strong>. Set difference is not commutative.
+                </li>
+                <li><strong>Is $P \cup Q = Q \cup P$?</strong><br>
+                  - $P \cup Q = \{4, 5, 6, 7, 8, 10\}$<br>
+                  - $Q \cup P = \{4, 5, 6, 7, 8, 10\}$<br>
+                  Since the sets are identical, the answer is <strong>Yes</strong>. Set union is commutative.
+                </li>
+              </ol>
+
+              <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 1.5rem 0;">
+
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">8(c) Determine $P \triangle Q$ [3 Marks]</h4>
+              <p>The symmetric difference is:
+              $$ P \triangle Q = (P - Q) \cup (Q - P) $$
+              Using values from 8(b):
+              $$ P \triangle Q = \{4, 5\} \cup \{10\} = \{4, 5, 10\} $$</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="question-card" data-tags="sets">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">9</span>
+              <span class="question-text">Course Enrollment Cardinality & PIE</span>
+            </span>
+            <span class="question-marks">15 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;" id="venn-tool">9(a), (b), (c) course statistics explorer</h4>
+              <p>We are given total students $N=200$. Let $M$ (Machine Learning), $D$ (Data Science), and $A$ (Artificial Intelligence) be sets of students enrolled in the courses:</p>
+              <ul>
+                <li>$|M| = 85$, $|D| = 75$, $|A| = 60$</li>
+                <li>$|M \cap D| = 30$, $|D \cap A| = 25$, $|M \cap A| = 20$</li>
+                <li>$|M \cap D \cap A| = 10$</li>
+              </ul>
+
+              <!-- VENN INTERACTIVE WIDGET -->
+              <div class="widget-container">
+                <div class="venn-grid">
+                  <div class="venn-svg-container">
+                    <svg width="260" height="260" viewBox="0 0 200 200">
+                      <!-- Venn circle M -->
+                      <circle cx="75" cy="75" r="50" fill="#3b82f6" class="venn-circle" id="circle-m" />
+                      <!-- Venn circle D -->
+                      <circle cx="125" cy="75" r="50" fill="#10b981" class="venn-circle" id="circle-d" />
+                      <!-- Venn circle A -->
+                      <circle cx="100" cy="115" r="50" fill="#f59e0b" class="venn-circle" id="circle-a" />
+                      
+                      <!-- Labels -->
+                      <text x="50" y="50" fill="white" font-size="10" font-weight="bold">ML</text>
+                      <text x="145" y="50" fill="white" font-size="10" font-weight="bold">DS</text>
+                      <text x="100" y="160" fill="white" font-size="10" font-weight="bold">AI</text>
+                    </svg>
+                  </div>
+                  <div class="venn-info-panel">
+                    <div class="venn-stat-item">
+                      <span>At least one course (Union)</span>
+                      <span class="venn-stat-num" id="venn-union">155</span>
+                    </div>
+                    <div class="venn-stat-item">
+                      <span>Exactly one course</span>
+                      <span class="venn-stat-num" id="venn-exactly-one">100</span>
+                    </div>
+                    <div class="venn-stat-item">
+                      <span>None of the courses</span>
+                      <span class="venn-stat-num" id="venn-none">45</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p><strong>Step-by-step Mathematical Solutions:</strong></p>
+              
+              <p><strong>(a) Enrolled in at least one course [6 Marks]:</strong><br>
+              Using the Principle of Inclusion-Exclusion (PIE) for 3 sets:
+              $$ |M \cup D \cup A| = |M| + |D| + |A| - (|M \cap D| + |D \cap A| + |M \cap A|) + |M \cap D \cap A| $$
+              $$ = 85 + 75 + 60 - (30 + 25 + 20) + 10 $$
+              $$ = 220 - 75 + 10 = 155 \text{ students} $$</p>
+
+              <p><strong>(b) Enrolled in exactly one course [7 Marks]:</strong><br>
+              Let's compute the students in only one category:
+              - $\text{Only ML} = |M| - |M \cap D| - |M \cap A| + |M \cap D \cap A| = 85 - 30 - 20 + 10 = 45$<br>
+              - $\text{Only DS} = |D| - |M \cap D| - |D \cap A| + |M \cap D \cap A| = 75 - 30 - 25 + 10 = 30$<br>
+              - $\text{Only AI} = |A| - |M \cap A| - |D \cap A| + |M \cap D \cap A| = 60 - 20 - 25 + 10 = 25$<br>
+              Summing these values:
+              $$ \text{Exactly One} = 45 + 30 + 25 = 100 \text{ students} $$</p>
+
+              <p><strong>(c) Not enrolled in any course [2 Marks]:</strong><br>
+              $$ \text{None} = N - |M \cup D \cup A| = 200 - 155 = 45 \text{ students} $$</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="question-card" data-tags="logic">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">10</span>
+              <span class="question-text">Formalization & Implication Conditions</span>
+            </span>
+            <span class="question-marks">15 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">10(a) Formalize Sentences [6 Marks]</h4>
+              <p>Let variables be defined as:<br>
+              - $p$: Paola is happy.<br>
+              - $q$: Paola paints a picture.<br>
+              - $r$: Renzo is happy.</p>
+              
+              <ol style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                <li style="margin-bottom: 0.75rem;">
+                  <strong>"If Paola is happy and paints a picture then Renzo isn't happy."</strong><br>
+                  Formalization: <strong>$(p \wedge q) \to \neg r$</strong>
+                </li>
+                <li style="margin-bottom: 0.75rem;">
+                  <strong>"If Paola is happy then she paints a picture."</strong><br>
+                  Formalization: <strong>$p \to q$</strong>
+                </li>
+                <li style="margin-bottom: 0.75rem;">
+                  <strong>"Paola is happy only if she paints a picture."</strong><br>
+                  Note: "A only if B" translates to the implication $A \to B$.<br>
+                  Formalization: <strong>$p \to q$</strong>
+                </li>
+              </ol>
+
+              <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 1.5rem 0;">
+
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">10(b) Logical Consequence Argument [5 Marks]</h4>
+              <p>Let the statements be:<br>
+              - $p$: I work out hard.<br>
+              - $q$: I am sore.<br>
+              - $r$: I take an aspirin.</p>
+              <p><strong>Premises:</strong></p>
+              <ol>
+                <li>$p \to q$ &nbsp; (If I work out hard then I am sore)</li>
+                <li>$q \to r$ &nbsp; (If I am sore, I take an aspirin)</li>
+                <li>$\neg r$ &nbsp; (I did not take an aspirin)</li>
+              </ol>
+              <p><strong>Deduction:</strong></p>
+              <ul>
+                <li>From premises (1) and (2), by <strong>Hypothetical Syllogism</strong>:
+                  $$ p \to r $$
+                </li>
+                <li>From $p \to r$ and premise (3) $\neg r$, by <strong>Modus Tollens</strong>:
+                  $$ \neg p $$
+                </li>
+              </ul>
+              <p>Thus, the logical consequence is <strong>$\neg p$</strong> ("I did not work out hard").</p>
+
+              <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 1.5rem 0;">
+
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">10(c) Necessity and Sufficiency Conditions [4 Marks]</h4>
+              <ul>
+                <li><strong>Sufficient Condition:</strong> A statement $P$ is sufficient for $Q$ if the truth of $P$ guarantees the truth of $Q$. That is, if $P$ is true, $Q$ must be true. In logic:
+                  $$ P \to Q $$
+                </li>
+                <li><strong>Necessary Condition:</strong> A statement $Q$ is necessary for $P$ if $P$ cannot be true without $Q$ being true. That is, if $Q$ is false, $P$ must be false. In logic:
+                  $$ \neg Q \to \neg P \quad \text{which is equivalent to} \quad P \to Q $$
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q11 -->
+        <div class="question-card" data-tags="groups">
+          <div class="question-header">
+            <span class="question-title">
+              <span class="question-num">11</span>
+              <span class="question-text">Cyclic Group of Prime Order & Index 2 Subgroups</span>
+            </span>
+            <span class="question-marks">15 Marks</span>
+          </div>
+          <div class="solution-body">
+            <span class="solution-badge">✔ Solution</span>
+            <div class="solution-text">
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">11(a) Prove every Group of Prime Order is Cyclic [5 Marks]</h4>
+              <p><strong>Proof:</strong></p>
+              <ol>
+                <li>Let $G$ be a group of order $|G| = p$, where $p$ is a prime number.</li>
+                <li>Since $p \geq 2$, there exists some non-identity element $a \in G$ (so $a \neq e$).</li>
+                <li>Consider the cyclic subgroup generated by $a$, denoted $\langle a \rangle$. By Lagrange's Theorem, the order of any subgroup must divide the order of the group $G$.
+                  $$ |\langle a \rangle| \text{ divides } |G| \implies |\langle a \rangle| \text{ divides } p $$
+                </li>
+                <li>Since $p$ is prime, its only positive divisors are $1$ and $p$.</li>
+                <li>Since $a \neq e$, the subgroup $\langle a \rangle$ contains at least $e$ and $a$, so $|\langle a \rangle| \ge 2$. Thus, $|\langle a \rangle|$ cannot be 1.</li>
+                <li>Therefore, the order of $|\langle a \rangle|$ must be $p$.</li>
+                <li>Since $\langle a \rangle \subseteq G$ and $|\langle a \rangle| = |G| = p$, it must be that $\langle a \rangle = G$. Thus, $G$ is generated by $a$ and is cyclic.</li>
+              </ol>
+
+              <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 1.5rem 0;">
+
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">11(b) Subgroup of Index 2 is Normal [5 Marks]</h4>
+              <p><strong>Proof:</strong></p>
+              <ol>
+                <li>Let $H$ be a subgroup of $G$ of index 2, i.e., $[G : H] = 2$. This means there are exactly 2 left cosets and 2 right cosets of $H$ in $G$.</li>
+                <li>The left cosets of $H$ are $H$ and $gH$ (where $g \notin H$). Since the cosets partition $G$, we have:
+                  $$ gH = G - H $$
+                </li>
+                <li>The right cosets of $H$ are $H$ and $Hg$ (where $g \notin H$). Since right cosets also partition $G$, we have:
+                  $$ Hg = G - H $$
+                </li>
+                <li>Thus, for any $g \notin H$, $gH = Hg$.</li>
+                <li>For any $g \in H$, since $H$ is a subgroup, $gH = H = Hg$.</li>
+                <li>Thus, for all $g \in G$, the left coset and right coset are identical: $gH = Hg$. By definition, $H$ is a normal subgroup of $G$.</li>
+              </ol>
+
+              <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 1.5rem 0;">
+
+              <h4 style="color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem;">11(c) Find distinct elements of cyclic subgroup order 40 [5 Marks]</h4>
+              <p>Let $G = \langle a \rangle$ be a cyclic group of order 40, so $o(a) = 40$.</p>
+              <ol style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                <li style="margin-bottom: 0.75rem;">
+                  <strong>Subgroup $\langle a^8 \rangle$:</strong><br>
+                  The order of $a^8$ is:
+                  $$ o(a^8) = \frac{40}{\gcd(8, 40)} = \frac{40}{8} = 5 $$
+                  The 5 distinct elements of $\langle a^8 \rangle$ are:
+                  <strong>$\{e, a^8, a^{16}, a^{24}, a^{32}\}$</strong> (where $a^{40} = e$).
+                </li>
+                <li>
+                  <strong>Subgroup $\langle a^{10} \rangle$:</strong><br>
+                  The order of $a^{10}$ is:
+                  $$ o(a^{10}) = \frac{40}{\gcd(10, 40)} = \frac{40}{10} = 4 $$
+                  The 4 distinct elements of $\langle a^{10} \rangle$ are:
+                  <strong>$\{e, a^{10}, a^{20}, a^{30}\}$</strong> (where $a^{40} = e$).
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 MAKAUT Discrete Mathematics PCC-CS401 Solved Papers. Designed with premium visual interfaces.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
