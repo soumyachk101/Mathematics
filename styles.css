@@ -518,10 +518,10 @@ header {
 }
 
 .question-num {
-  color: var(--accent-color);
-  font-weight: 800;
-  font-size: 1.3rem;
-  min-width: 45px;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 1.15rem;
+  min-width: 40px;
 }
 
 .question-text {
@@ -529,24 +529,23 @@ header {
 }
 
 .solution-body {
-  background: var(--bg-tertiary);
+  background: var(--bg-primary);
+  border: 1px solid var(--card-border);
   border-radius: var(--border-radius-md);
   padding: 2rem;
   border-left: 4px solid var(--success-color);
 }
 
 .solution-badge {
-  display: inline-block;
-  background: var(--success-glow);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   color: var(--success-color);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 0.3rem 0.8rem;
-  border-radius: 6px;
   margin-bottom: 1.5rem;
   letter-spacing: 0.05em;
-  border: 1px solid rgba(5, 150, 105, 0.2);
 }
 
 .solution-text {
