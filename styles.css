@@ -200,9 +200,21 @@ header {
   border: 1px solid var(--card-border);
   border-radius: 9999px;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.badge-blue {
+  background: rgba(37, 99, 235, 0.1) !important;
+  color: #2563eb !important;
+  border-color: rgba(37, 99, 235, 0.2) !important;
+}
+
+.badge-orange {
+  background: rgba(217, 119, 6, 0.1) !important;
+  color: #d97706 !important;
+  border-color: rgba(217, 119, 6, 0.2) !important;
 }
 
 /* MARKS-WISE UI COMPONENTS */
@@ -339,6 +351,7 @@ header {
   color: var(--text-primary);
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   transition: all var(--transition-normal);
   box-shadow: var(--shadow-sm);
 }
@@ -351,7 +364,7 @@ header {
 
 .year-card h2 {
   font-size: 1.8rem;
-  margin: 1rem 0;
+  margin: 1.25rem 0 0.75rem 0;
   color: var(--text-primary);
 }
 
@@ -367,6 +380,7 @@ header {
   gap: 1.5rem;
   border-top: 1px solid var(--card-border);
   padding-top: 1.5rem;
+  width: 100%;
 }
 
 .year-meta span {
